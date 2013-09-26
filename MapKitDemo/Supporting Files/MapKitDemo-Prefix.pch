@@ -1,0 +1,24 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+// Note: only one of the following 3 callout options should be un-commented
+#define USE_WHITE_CALLOUT
+//#define USE_GREEN_CALLOUT
+//#define USE_DEFAULT_CALLOUT
+
+//#define OPEN_IN_MAPS
+#define SHOW_DIRECTIONS_INSTEAD_OF_PHONE
